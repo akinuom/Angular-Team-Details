@@ -1,0 +1,37 @@
+
+ h1{
+   text-align: center;
+   color: blue;
+
+ }
+  table {
+    border-collapse: collapse;
+    text-align: center;
+    border: 20px, 20px;
+    margin:1em auto;
+  }
+  
+  tr:nth-child(even){
+    background-color:gray;
+  }
+  tr:hover {
+    background-color: darkgrey;
+    width: 20px;
+    cursor: pointer;
+  }
+
+
+   table thead th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+ 
+  table td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  

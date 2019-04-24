@@ -1,0 +1,47 @@
+<h1>Edit Members Details</h1>
+
+<div class="container">
+        <form  #subform = "ngForm" (ngSubmit)="save(subform.value)">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Display Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="displayName" [(ngModel)] ="member.person.displayName" />
+            </div>
+          </div>
+          <div class="row">
+                <div class="col-25">
+                  <label for="fname">Unit</label>
+                </div>
+                <div class="col-75">
+                   <input type="text" name="unit" [(ngModel)]="member.unit"/>
+                </div>
+              </div>
+
+              <div class="row">
+                    <div class="col-25">
+                      <label for="fname">Position</label>
+                    </div>
+                    <div class="col-75">
+                       <input type="text" name="position"  [(ngModel)]="member.position"/>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                        <div class="col-25">
+                          <label for="fname">Depth Order</label>
+                        </div>
+                        <div class="col-75">
+                           <input type="text" name="depthOrder"  [(ngModel)]="member.depthOrder"/>
+                        </div>
+                      </div>
+                      <br/>
+                     
+          <div class="row">
+            <button type="submit" value="Save">Save</button>  <br/>
+             <button  type="submit" (click)="goBack()">Cancel</button>
+          </div>
+         
+        </form>
+      </div>

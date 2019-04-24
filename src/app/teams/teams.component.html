@@ -1,0 +1,20 @@
+<h1>Team Details</h1>
+<br/>
+<ng-container>
+  <div class="limiter">
+    <table>
+      <thead>
+        <th>S.No</th>
+        <th>Full Name</th>
+        <th>Nick Name</th>
+        <th>Number of Players</th>
+      </thead>
+      <tr (click)="getData(team.name)" *ngFor="let team of teams; let i= index;">
+        <td>{{i+1}}</td>
+        <td>{{team.fullName}}</td>
+        <td>{{team.nickName}}</td>
+        <td>{{team.roster.length}}</td>
+      </tr>
+    </table>
+  </div>
+</ng-container>

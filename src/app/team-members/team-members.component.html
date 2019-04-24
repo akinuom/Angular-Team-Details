@@ -1,0 +1,11 @@
+<h1>Team Members Details</h1>
+<br />
+<div class="row">
+  <div *ngFor="let member of persons" class="column">
+    <div (click)="getDetails(member.person.displayName)" class="card">
+      <h4><b>{{member.person.displayName}}</b></h4>
+      <p><b>Unit: </b> <i>{{member.unit}}</i></p>
+      <p><b>Position: </b> <i>{{member.position}}</i></p>
+      <p><b>Depth Order: </b> {{member.depthOrder}}</p>
+    </div><br />
+  </div>
